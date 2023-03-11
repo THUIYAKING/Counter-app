@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import './counter.css'
 import './index.css'
+import './App.css'
 function Counter() {
   const [count, setCount] = useState(0);
 
@@ -14,7 +15,7 @@ function Counter() {
   const color = count >= 5 ? 'red' : 'blue';
 
   return (
-    <div  style={{ width: '10rem', height: '10rem', backgroundColor: color , align:'center' }}>
+    <div className='body' style={{ width: '10rem', height: '10rem', backgroundColor: color , align:'center' }}>
       <h1>{count}</h1>
       
       <button className='button' onClick={handleIncrement}>+</button>
